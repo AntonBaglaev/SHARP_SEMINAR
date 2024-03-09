@@ -8,7 +8,7 @@
 Console.WriteLine("Введите трехзначное число ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-if((num >= 100 && num <= 999) || (num >= -999 && num <= -100))
+if ((num >= 100 && num <= 999) || (num >= -999 && num <= -100))
 {
     int firstDigit = num / 100;
     int lastDigit = num % 10;
