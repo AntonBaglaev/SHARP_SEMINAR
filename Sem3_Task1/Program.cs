@@ -6,8 +6,16 @@
 // [-4 3 4 1], 3 => Да 
 
 int[] array = {1,3,4,19,3}; 
-int num = 8;
+int num = 4;
 bool isExistNum = false;
+
+for (int i = 0; i < array.Length; i++) 
+{
+    Console.Write(array[i] + " ");
+} 
+
+Console.WriteLine();
+Console.WriteLine("Искомое число: " + num);
 
 for (int i = 0; i < array.Length; i++)
 {
@@ -18,5 +26,7 @@ for (int i = 0; i < array.Length; i++)
     }
 }
 
-if (isExistNum) Console.WriteLine("Да");
-else Console.WriteLine("Нет");
+Console.WriteLine(isExistNum ? "Да" : "Нет");
+
+// if (isExistNum) Console.WriteLine("Да");
+// else Console.WriteLine("Нет");
