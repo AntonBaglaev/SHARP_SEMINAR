@@ -74,3 +74,20 @@ namespace Task_001
         }  
     }
 }
+
+
+// ответ на автотест
+// public static int CountItemsRange(int[] numbers, int minRange, int maxRange)
+//     {
+//          int cnt = 0;
+//         for (int i = 0; i < numbers.Length; i++)
+//         {
+//             if (numbers[i] >= minRange && numbers[i] <= maxRange)
+//             {
+//                 cnt++;
+//             }
+//         }
+//         return cnt;
+//     }
+    
+// public static void PrintResult(int[] array)
