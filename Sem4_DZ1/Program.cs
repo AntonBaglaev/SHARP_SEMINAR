@@ -1,7 +1,5 @@
 ﻿// Напишите программу, которая бесконечно запрашивает целые числа с консоли. Программа завершается при вводе символа ‘q’ или при вводе числа, сумма цифр которого четная.
 
-// void Main(string[] args)
-{
     string inString = GetDataFromConsole();
 
     while(true)
@@ -13,7 +11,7 @@
         }
         inString = GetDataFromConsole();
     }
-}
+
 
 string GetDataFromConsole() 
 {
@@ -23,7 +21,7 @@ string GetDataFromConsole()
     return inValue;
 }
 
-static int ConvertStringToNumber(string number) 
+int ConvertStringToNumber(string number) 
 {
     try
     {
@@ -36,7 +34,7 @@ static int ConvertStringToNumber(string number)
     return -1;
 }
 
-static bool isExit(string str) 
+bool isExit(string str) 
 {
     if(str.Contains('q')) 
     {
@@ -45,7 +43,7 @@ static bool isExit(string str)
     return false;
 }
 
-static bool isEvenSumValue (string str) 
+bool isEvenSumValue (string str) 
 {
     int sum = 0;
     string[] array = str.Split(' ');
