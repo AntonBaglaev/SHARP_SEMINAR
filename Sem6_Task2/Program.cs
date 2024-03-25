@@ -14,4 +14,22 @@ char[] StringToCharsArray(string str)
     return array;
 }
 
-Console.WriteLine(StringToCharsArray("Hello!"));
+void PrintArray(char[] array)
+{
+    Console.Write("[");
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (i < array.Length - 1)
+        {
+            Console.Write($"{array[i]}, ");
+        }
+        else
+        {
+            Console.Write($"{array[i]}");
+        }
+
+    }
+    Console.Write("]");
+}
+
+PrintArray(StringToCharsArray("Hello!"));
